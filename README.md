@@ -28,3 +28,9 @@ vagrant up
 after about 1 1/2 minutes you should have a running ubuntu 16:04 complete
 with nginx, mysql and php.  You can check it all worked by going to
 http://localhost:8090/ and http://localhost:8090/info.php
+
+## what now
+The nginx server is now reading files from this local directory under the
+html directory.  mysql is installed without a root password.  You could make
+this a 'box' under vagrant so that you don't have to wait while ubuntu
+installs nginx, mysql and php, though that process doesn't take too long.
