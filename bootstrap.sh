@@ -1,5 +1,7 @@
 #!/bin/bash
 apt-get update
+# zip and unzip needed for composer
+apt-get install -y zip unzip
 apt-get install -y nginx
 apt-get install -y php php-fpm php-mysql php-mcrypt php-cli php-curl
 # default nginx config
@@ -39,3 +41,9 @@ wget https://phar.phpunit.de/phpunit-6.1.phar
 chmod +x phpunit-6.1.phar
 sudo mv phpunit-6.1.phar /usr/local/bin/phpunit
 phpunit --version
+
+# install yii
+mkdir -p /vagrant/html/yii
+cd /vagrant/html/yii
+composer global require "fxp/composer-asset-plugin:^1.3.1"
+composer create-project --prefer-dist yiisoft/yii2-app-basic basic
