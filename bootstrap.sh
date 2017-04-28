@@ -29,4 +29,13 @@ apt-get install -y mysql-server
 # apt-get install -y vim-fugitive
 
 # install php composer (package manager)
-./get-composer.sh
+/vagrant/get-composer.sh
+chmod +x composer.phar
+sudo mv composer.phar /usr/local/bin/composer
+composer --version
+
+# install phpunit unit testing framework
+wget https://phar.phpunit.de/phpunit-6.1.phar
+chmod +x phpunit-6.1.phar
+sudo mv phpunit-6.1.phar /usr/local/bin/phpunit
+phpunit --version
