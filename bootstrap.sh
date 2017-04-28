@@ -20,9 +20,13 @@ apt-get install -y mysql-server
 
 # the following packages are particular to my
 # development environment, you may, or may not want them.
-apt-get install -y git-core
+#
+# apt-get install -y git-core
+# 
+# apt-get install -y exuberant-ctags
+# apt-get install -y vim
+# apt-get install -y vim-pathogen
+# apt-get install -y vim-fugitive
 
-apt-get install -y exuberant-ctags
-apt-get install -y vim
-apt-get install -y vim-pathogen
-apt-get install -y vim-fugitive
+# install php composer (package manager)
+./get-composer.sh
