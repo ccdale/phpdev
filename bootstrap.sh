@@ -37,7 +37,7 @@ sudo mv composer.phar /usr/local/bin/composer
 composer --version
 
 # install phpunit unit testing framework
-wget https://phar.phpunit.de/phpunit-6.1.phar
+wget --quiet https://phar.phpunit.de/phpunit-6.1.phar
 chmod +x phpunit-6.1.phar
 sudo mv phpunit-6.1.phar /usr/local/bin/phpunit
 phpunit --version
