@@ -43,7 +43,7 @@ sudo mv phpunit-6.1.phar /usr/local/bin/phpunit
 phpunit --version
 
 # install yii
-mkdir -p /vagrant/html/yii
-cd /vagrant/html/yii
-composer global require "fxp/composer-asset-plugin:^1.3.1"
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+# mkdir -p /vagrant/html/yii
+# cd /vagrant/html/yii
+# composer global require "fxp/composer-asset-plugin:^1.3.1"
+# composer create-project --prefer-dist yiisoft/yii2-app-basic basic
